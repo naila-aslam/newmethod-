@@ -67,6 +67,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     //implementation (project(":networkmodule"))
-
+//    implementation("com.github.naila-aslam:newmethod:1.0.0")
 //    implementation ("com.github.sonusurender:LibraryModuleDemo:1.0.8")
 }

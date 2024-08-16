@@ -9,6 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.toaster"
+        multiDexEnabled = true
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -47,7 +48,9 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    buildToolsVersion = "34.0.0"
 }
+
 
 dependencies {
 
@@ -66,7 +69,13 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    //implementation (project(":networkmodule"))
+//    implementation (project(":networkmodule"))
 //    implementation("com.github.naila-aslam:newmethod:1.0.0")
 //    implementation ("com.github.sonusurender:LibraryModuleDemo:1.0.8")
+//      noinspection UseTomlInstead
+////      implementation ("com.github.naila-aslam:newmethod-:1.0.1")
+//    implementation("com.github.naila-aslam:newway:1.0.0")
+//    implementation("com.android.support:multidex:2.0.1")
+
+
 }

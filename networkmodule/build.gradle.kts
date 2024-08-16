@@ -41,14 +41,22 @@ android {
     }
 }
 
+
 publishing {
     publications {
         register<MavenPublication>("release") {
+            // After evaluating the project, configure the publication
             afterEvaluate {
                 from(components["release"])
             }
+
+            // Set the details of the published artifact
+            groupId = "com.github.naila-aslam"
+            artifactId = "newway"  // Artifact name
+            version = "1.0.0"      // Version
         }
     }
+
 }
 
 dependencies {
